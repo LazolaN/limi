@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "DM Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Earth & Agriculture palette */
+  --color-earth-50: #faf7f2;
+  --color-earth-100: #f0ebe0;
+  --color-earth-200: #e0d5c0;
+  --color-earth-300: #c9b896;
+  --color-earth-400: #b39b6e;
+  --color-earth-500: #9a7f4e;
+  --color-earth-600: #7d6640;
+  --color-earth-700: #5e4d32;
+  --color-earth-800: #3f3322;
+  --color-earth-900: #1f1a11;
+
+  /* InDaba green */
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+  --color-green-900: #14532d;
+
+  /* Ubuntu warm accent */
+  --color-ubuntu-400: #e8772e;
+  --color-ubuntu-500: #dd6b20;
+  --color-ubuntu-600: #c05621;
+
+  /* Confidence badges */
+  --color-conf-high: #16a34a;
+  --color-conf-medium: #d97706;
+  --color-conf-low: #dc2626;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #faf7f2;
+  color: #1f1a11;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Markdown in chat messages */
+.chat-markdown h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.chat-markdown ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin: 0.25rem 0;
+}
+.chat-markdown ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin: 0.25rem 0;
+}
+.chat-markdown p {
+  margin: 0.25rem 0;
+}
+.chat-markdown table {
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+}
+.chat-markdown th, .chat-markdown td {
+  border: 1px solid #e0d5c0;
+  padding: 0.25rem 0.5rem;
+}
+.chat-markdown strong {
+  font-weight: 600;
+}
+.chat-markdown em {
+  font-style: italic;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 250ms ease-out;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+.animate-pulse-dot {
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}

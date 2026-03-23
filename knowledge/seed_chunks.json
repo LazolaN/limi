@@ -1,0 +1,68 @@
+[
+  {
+    "source_title": "DARD Maize Production Guidelines - KwaZulu-Natal",
+    "source_type": "DARD",
+    "chunk_text": "Maize planting in KwaZulu-Natal should commence when soil temperature at 10cm depth reaches 12°C or above. Recommended planting windows: Coastal lowlands (October 1 - November 30), Midlands (October 15 - December 15), Northern regions (November 1 - December 31). Plant spacing: 90cm between rows, 25-30cm between plants for dryland conditions. For irrigated maize, spacing can be reduced to 75cm between rows. Seed rate: 25-35 kg/ha depending on cultivar and conditions. Popular cultivars for KZN: SC701 (drought tolerant, open-pollinated), DKC80-40 (high yield hybrid), PAN 6479 (good standability). Fertiliser: Apply 200-250 kg/ha LAN at planting, followed by 200 kg/ha LAN as topdressing at knee height (V6 stage). Soil pH should be maintained between 5.5 and 6.5.",
+    "relevance_score": 0.95
+  },
+  {
+    "source_title": "DARD Maize Production Guidelines - Free State",
+    "source_type": "DARD",
+    "chunk_text": "Free State maize planting window: Eastern Free State (October 15 - November 30), Western Free State (November 1 - December 15). The western regions receive less rainfall (400-500mm annually) and farmers should consider drought-tolerant cultivars. Recommended plant population: 20,000-35,000 plants/ha for dryland, 60,000-80,000 plants/ha for irrigated. Fertiliser recommendations based on soil analysis: Base application of 150-200 kg/ha 2:3:2 (22) at planting. Topdress with 150-200 kg/ha LAN at V6 stage. For soils with pH below 5.5, apply agricultural lime at 2-4 tons/ha at least 3 months before planting.",
+    "relevance_score": 0.90
+  },
+  {
+    "source_title": "DARD Tomato Disease Management Guide",
+    "source_type": "DARD",
+    "chunk_text": "Early Blight (Alternaria solani): Symptoms appear as dark brown to black concentric rings on lower/older leaves first, creating a 'target spot' pattern. Lesions may also appear on stems and fruit. Favoured by warm (24-29°C), humid conditions with alternating wet and dry periods. Treatment: Remove and destroy affected lower leaves. Apply mancozeb-based fungicide (e.g., Dithane M-45) at 2-2.5 kg/ha in 500-800L water every 7-10 days during wet conditions. Withholding period: 7 days before harvest. Alternatively, copper-based organic options (copper oxychloride at 2.5-3 kg/ha) can be used with a 3-day withholding period. Prevention: 3-year crop rotation away from solanaceous crops, use resistant varieties (e.g., Rodade, Star 9037), ensure good air circulation between plants (minimum 50cm spacing).",
+    "relevance_score": 0.92
+  },
+  {
+    "source_title": "DARD Tomato Disease Management - Late Blight",
+    "source_type": "DARD",
+    "chunk_text": "Late Blight (Phytophthora infestans): Symptoms include large, water-soaked, irregularly shaped lesions on leaves, often starting at leaf edges. White fuzzy growth may be visible on the underside of leaves in humid conditions. Can destroy entire crop in 7-10 days if untreated. Favoured by cool (10-20°C), wet conditions. Treatment: Apply metalaxyl-based fungicide (e.g., Ridomil Gold MZ at 2.5 kg/ha) preventatively when conditions favour disease. Withholding period: 14 days. PPE required: Chemical-resistant gloves, face shield, long-sleeved shirt and trousers. Emergency: Poison Information Centre 0861 555 777. Organic alternative: Bordeaux mixture (copper sulphate + hydrated lime). Prevention: Plant resistant cultivars, avoid overhead irrigation, improve drainage, remove volunteer plants.",
+    "relevance_score": 0.91
+  },
+  {
+    "source_title": "ARC Cattle Health Guide - Common Diseases",
+    "source_type": "ARC",
+    "chunk_text": "Recommended vaccination schedule for cattle in South Africa: Anthrax (annually in endemic areas, compulsory in some provinces), Black quarter/Blackleg (calves at 3-6 months, booster at 12 months), Botulism (annually, especially where phosphorus deficiency occurs), Brucellosis (heifers 4-8 months, compulsory for dairy), Lumpy Skin Disease (annually before summer), Rift Valley Fever (when warned by DARD). Notifiable diseases requiring immediate state vet notification: Foot-and-mouth disease (FMD) — symptoms: excessive salivation, blisters on mouth/feet/teats, lameness, fever >40°C. African Swine Fever (ASF) — symptoms: high fever, reddening of skin, vomiting, diarrhoea, sudden death. Anthrax — symptoms: sudden death, blood from natural openings, rapid bloating. Do NOT open the carcass if anthrax is suspected.",
+    "relevance_score": 0.94
+  },
+  {
+    "source_title": "ARC Cattle Health - Tick-Borne Diseases",
+    "source_type": "ARC",
+    "chunk_text": "Tick-borne diseases are the leading cause of cattle losses in South Africa. Redwater (Babesiosis): Caused by Babesia bigemina (transmitted by blue tick). Symptoms: high fever (>41°C), dark red-brown urine, anaemia, jaundice. Treatment: Diminazene aceturate (Berenil) at 3.5 mg/kg body weight intramuscularly. Withholding period for meat: 21 days. Gallsickness (Anaplasmosis): Caused by Anaplasma marginale. Symptoms: fever, anaemia, jaundice, constipation. Treatment: Oxytetracycline LA at 20 mg/kg intramuscularly. Withholding period: 28 days for meat, 7 days for milk. Heartwater (Cowdriosis): Caused by Ehrlichia ruminantium (transmitted by bont tick). Symptoms: high fever, nervous signs (walking in circles, high-stepping gait), fluid in lungs. Treatment: Oxytetracycline at 10 mg/kg IV, must be given early. Prevention: Strategic dipping programme — dip every 7 days in summer, every 14 days in winter.",
+    "relevance_score": 0.88
+  },
+  {
+    "source_title": "SAFEX Commodity Market Information",
+    "source_type": "SAFEX",
+    "chunk_text": "SAFEX (South African Futures Exchange) is the agricultural commodities division of the Johannesburg Stock Exchange (JSE). It trades futures and options contracts for white maize, yellow maize, wheat, soybeans, sunflower seed, and sorghum. Spot prices represent the current market value for immediate delivery. Futures prices represent the agreed price for delivery at a future date (e.g., Jul26 = July 2026 delivery). The reference price is the previous day's closing price. Farmers can use SAFEX prices as a benchmark for negotiations with grain buyers and cooperatives. Important: SAFEX prices are for grain delivered to designated silos at specified grading standards. Actual farm-gate prices may differ by R200-500/ton depending on transport costs, moisture content, and grade deductions.",
+    "relevance_score": 0.85
+  },
+  {
+    "source_title": "DARD Soil Management - KwaZulu-Natal",
+    "source_type": "DARD",
+    "chunk_text": "Soil pH management for KwaZulu-Natal: Most crops grow best in slightly acidic to neutral soil (pH 5.5-7.0). KZN soils tend to be naturally acidic (pH 4.0-5.5) due to high rainfall leaching bases. Lime application guide: For soils with pH below 5.0, apply 2-4 tons/ha of agricultural lime (calcium carbonate). For pH 5.0-5.5, apply 1-2 tons/ha. Apply lime at least 3 months before planting and incorporate into the top 15cm of soil. Dolomitic lime is preferred when magnesium levels are low. Soil testing: Farmers should test soil every 2-3 years. Collect samples from 0-15cm depth, 10-15 random samples per land of uniform soil. Mix samples and send 500g to the nearest DARD soil laboratory. KZN soil labs: Cedara (033 355 9100), Dundee (034 212 2802). Cost: Free for smallholder farmers with a valid farmer registration.",
+    "relevance_score": 0.87
+  },
+  {
+    "source_title": "ARC Northern Corn Leaf Blight Advisory",
+    "source_type": "ARC",
+    "chunk_text": "Northern Corn Leaf Blight (NCLB), caused by Exserohilum turcicum, is one of the most significant foliar diseases of maize in South Africa. Symptoms: Long, elliptical, greyish-green to tan lesions (5-15cm) on leaves, starting from lower leaves and progressing upward. Severe infections cause premature leaf death and yield losses of 30-50%. Favoured by moderate temperatures (18-27°C) and extended leaf wetness (>6 hours of dew). Management: Plant resistant cultivars (Ht1, Ht2, Ht3 resistance genes). Apply foliar fungicide at first sign of disease: triazole-based products (e.g., propiconazole at 0.5L/ha or epoxiconazole + pyraclostrobin at 1.0L/ha). Timing is critical — apply before tasselling for maximum yield protection. Withholding period: 14 days. PPE: Gloves, face mask, long sleeves. Poison Information Centre: 0861 555 777. Cultural control: Remove crop residues after harvest, rotate with non-host crops (soybeans, sunflower).",
+    "relevance_score": 0.96
+  },
+  {
+    "source_title": "DARD Potato Production Guide - Eastern Cape",
+    "source_type": "DARD",
+    "chunk_text": "Potato production in the Eastern Cape: Main planting seasons are August-September (spring crop) and January-February (autumn crop) in frost-free areas. Soil requirements: Well-drained, sandy loam to loam soils with pH 5.2-6.0. Avoid waterlogged soils. Seed rate: 2-2.5 tons/ha for table potatoes, plant spacing 30cm in-row, 75-90cm between rows. Planting depth: 10-15cm. Fertiliser: Apply 800-1200 kg/ha 2:3:4(30) at planting. Topdress with 200 kg/ha KCl at tuber initiation. Major diseases: Late blight (spray preventatively with mancozeb + metalaxyl every 7-10 days in wet weather), Early blight, Bacterial wilt (no chemical control — use certified seed, 4-year rotation). Common pests: Potato tuber moth — control with chlorpyrifos at planting, maintain adequate soil cover over tubers.",
+    "relevance_score": 0.86
+  },
+  {
+    "source_title": "DARD Goat Health Management",
+    "source_type": "DARD",
+    "chunk_text": "Common goat health issues in South Africa: Internal parasites (wireworm/Haemonchus contortus) are the number one cause of goat losses. Symptoms: anaemia (pale inner eyelid — use FAMACHA scoring), bottle jaw (swelling under chin), weight loss, diarrhoea. Treatment: Albendazole (Valbazen) at 7.5 mg/kg orally, or Ivermectin at 0.2 mg/kg subcutaneously. Rotate anthelmintic groups to prevent resistance. Withholding periods: Albendazole — meat 14 days, milk 5 days. Ivermectin — meat 35 days, do NOT use in lactating dairy goats. Heartwater in goats: Symptoms similar to cattle but goats often die before showing nervous signs. Treat early with oxytetracycline. Orf (sore mouth): Viral — crusty scabs around mouth and nostrils. Usually self-limiting in 3-4 weeks. Keep sores clean. WARNING: Orf is zoonotic — wear gloves when handling affected animals.",
+    "relevance_score": 0.89
+  }
+]
