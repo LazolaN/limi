@@ -48,6 +48,9 @@ export const QUICK_QUESTIONS = [
   'My tomato leaves have brown spots',
   'When should I plant maize in KZN?',
   'My cow is not eating and has a fever',
+  'Can I get a loan for maize seeds?',
+  'How do I insure my crop?',
+  'Find a buyer for my maize',
   'How do I improve my soil pH?',
   'Ngicela intengo yombila', // isiZulu: maize price
 ];

@@ -4,9 +4,12 @@ import { ChatBubble } from './components/ChatBubble';
 import { ChatInput } from './components/ChatInput';
 import { TypingIndicator } from './components/TypingIndicator';
 import { QuickActions } from './components/QuickActions';
+import { AnalyticsDashboard } from './components/AnalyticsDashboard';
 import { sendQuery, checkHealth } from './api';
 import { FARMERS } from './data';
 import type { ChatMessage, Channel, Language, FarmerOption } from './types';
+
+type View = 'chat' | 'analytics';
 
 export default function App() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -15,6 +18,7 @@ export default function App() {
   const [selectedLanguage, setSelectedLanguage] = useState<Language>(FARMERS[0].language);
   const [selectedChannel, setSelectedChannel] = useState<Channel>('web');
   const [apiStatus, setApiStatus] = useState<'connected' | 'disconnected' | 'checking'>('checking');
+  const [activeView, setActiveView] = useState<View>('chat');
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const sessionId = useRef(`web-${Date.now()}`);
@@ -111,68 +115,96 @@ export default function App() {
         apiStatus={apiStatus}
       />
 
-      {/* Main chat area */}
+      {/* Main area */}
       <main className="flex flex-1 flex-col bg-earth-50">
-        {/* Header */}
+        {/* Header with view toggle */}
         <header className="flex items-center justify-between border-b border-earth-200 bg-white px-6 py-3">
           <div>
             <h2 className="font-display text-sm font-semibold text-earth-800">
-              Chatting as {selectedFarmer.name}
+              {activeView === 'chat' ? `Chatting as ${selectedFarmer.name}` : 'Analytics Dashboard'}
             </h2>
             <p className="text-xs text-earth-400">
-              {selectedFarmer.province} · {selectedChannel.toUpperCase()} channel · {selectedLanguage.toUpperCase()}
+              {activeView === 'chat'
+                ? `${selectedFarmer.province} · ${selectedChannel.toUpperCase()} channel · ${selectedLanguage.toUpperCase()}`
+                : 'Query volume, costs, and financial funnel'
+              }
             </p>
           </div>
-          <div className="flex items-center gap-2 text-xs text-earth-300">
-            <span className="rounded bg-earth-100 px-2 py-0.5 font-mono">Claude Sonnet 4</span>
+          <div className="flex items-center gap-2">
+            <div className="flex rounded-lg border border-earth-200 text-xs">
+              <button
+                onClick={() => setActiveView('chat')}
+                className={`rounded-l-lg px-3 py-1.5 transition-colors ${
+                  activeView === 'chat' ? 'bg-green-50 text-green-700 font-medium' : 'text-earth-400 hover:bg-earth-50'
+                }`}
+              >
+                Chat
+              </button>
+              <button
+                onClick={() => setActiveView('analytics')}
+                className={`rounded-r-lg px-3 py-1.5 transition-colors ${
+                  activeView === 'analytics' ? 'bg-green-50 text-green-700 font-medium' : 'text-earth-400 hover:bg-earth-50'
+                }`}
+              >
+                Analytics
+              </button>
+            </div>
+            <span className="rounded bg-earth-100 px-2 py-0.5 font-mono text-xs text-earth-300">Tiered AI</span>
           </div>
         </header>
 
-        {/* Messages */}
-        <div className="flex-1 overflow-y-auto px-6 py-4">
-          {isEmpty ? (
-            <div className="flex h-full flex-col items-center justify-center gap-6">
-              <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-green-100">
-                  <span className="text-3xl">🌱</span>
-                </div>
-                <h3 className="font-display text-xl font-bold text-earth-800">
-                  Sawubona! Welcome to InDaba
-                </h3>
-                <p className="mt-1 max-w-md text-sm text-earth-400">
-                  I'm your agricultural advisor. Ask me about crop diseases, market prices,
-                  planting calendars, livestock health, or soil management.
-                </p>
-              </div>
-              <QuickActions onSelect={handleSend} />
-            </div>
-          ) : (
-            <div className="mx-auto max-w-2xl space-y-4">
-              {messages.map((message) => (
-                <ChatBubble key={message.id} message={message} />
-              ))}
-              {isLoading && <TypingIndicator />}
-              <div ref={messagesEndRef} />
-            </div>
-          )}
-        </div>
-
-        {/* Input */}
-        <div className="border-t border-earth-200 bg-white px-6 py-3">
-          <div className="mx-auto max-w-2xl">
-            <ChatInput
-              onSend={handleSend}
-              disabled={isLoading}
-              placeholder={
-                selectedLanguage === 'zu'
-                  ? 'Buza InDaba umbuzo...'
-                  : selectedLanguage === 'xh'
-                    ? 'Buza InDaba umbuzo...'
-                    : 'Ask InDaba a question...'
-              }
-            />
+        {activeView === 'analytics' ? (
+          <div className="flex-1 overflow-y-auto">
+            <AnalyticsDashboard />
           </div>
-        </div>
+        ) : (
+          <>
+            {/* Messages */}
+            <div className="flex-1 overflow-y-auto px-6 py-4">
+              {isEmpty ? (
+                <div className="flex h-full flex-col items-center justify-center gap-6">
+                  <div className="text-center">
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-green-100">
+                      <span className="text-3xl">🌱</span>
+                    </div>
+                    <h3 className="font-display text-xl font-bold text-earth-800">
+                      Sawubona! Welcome to Limi
+                    </h3>
+                    <p className="mt-1 max-w-md text-sm text-earth-400">
+                      Your farm advisor — ask about crops, livestock, market prices, loans, insurance, or finding a buyer.
+                    </p>
+                  </div>
+                  <QuickActions onSelect={handleSend} />
+                </div>
+              ) : (
+                <div className="mx-auto max-w-2xl space-y-4">
+                  {messages.map((message) => (
+                    <ChatBubble key={message.id} message={message} />
+                  ))}
+                  {isLoading && <TypingIndicator />}
+                  <div ref={messagesEndRef} />
+                </div>
+              )}
+            </div>
+
+            {/* Input */}
+            <div className="border-t border-earth-200 bg-white px-6 py-3">
+              <div className="mx-auto max-w-2xl">
+                <ChatInput
+                  onSend={handleSend}
+                  disabled={isLoading}
+                  placeholder={
+                    selectedLanguage === 'zu'
+                      ? 'Buza uLimi umbuzo...'
+                      : selectedLanguage === 'xh'
+                        ? 'Buza uLimi umbuzo...'
+                        : 'Ask Limi a question...'
+                  }
+                />
+              </div>
+            </div>
+          </>
+        )}
       </main>
     </div>
   );

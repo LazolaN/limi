@@ -64,5 +64,71 @@
     "source_type": "DARD",
     "chunk_text": "Common goat health issues in South Africa: Internal parasites (wireworm/Haemonchus contortus) are the number one cause of goat losses. Symptoms: anaemia (pale inner eyelid — use FAMACHA scoring), bottle jaw (swelling under chin), weight loss, diarrhoea. Treatment: Albendazole (Valbazen) at 7.5 mg/kg orally, or Ivermectin at 0.2 mg/kg subcutaneously. Rotate anthelmintic groups to prevent resistance. Withholding periods: Albendazole — meat 14 days, milk 5 days. Ivermectin — meat 35 days, do NOT use in lactating dairy goats. Heartwater in goats: Symptoms similar to cattle but goats often die before showing nervous signs. Treat early with oxytetracycline. Orf (sore mouth): Viral — crusty scabs around mouth and nostrils. Usually self-limiting in 3-4 weeks. Keep sores clean. WARNING: Orf is zoonotic — wear gloves when handling affected animals.",
     "relevance_score": 0.89
+  },
+  {
+    "source_title": "DALRRD African Swine Fever Advisory - Eastern Cape",
+    "source_type": "DALRRD",
+    "chunk_text": "African Swine Fever (ASF) is a notifiable disease in South Africa under the Animal Diseases Act 35 of 1984. There is no commercial vaccine and no treatment — mortality in domestic pigs approaches 100%. Symptoms in pigs: high fever (40.5-42°C), loss of appetite, weakness, reddening or purplish discolouration of skin (ears, snout, belly, legs), vomiting, bloody diarrhoea, sudden death. Suspect cases must be reported within 24 hours to the local State Veterinarian. Do NOT move pigs, pig products, or feed off the property. Do NOT slaughter or sell suspected animals. Biosecurity for smallholders: fence pigs separately from neighbouring pigs, never feed kitchen scraps containing pork (banned), restrict farm visitors, disinfect boots and vehicles entering the pig run, source replacement stock only from registered breeders with health certificates. Eastern Cape has had recurring ASF outbreaks since 2019 in OR Tambo, Alfred Nzo, and Joe Gqabi districts; assume endemic risk and act preventatively.",
+    "relevance_score": 0.97
+  },
+  {
+    "source_title": "DALRRD Swill Feeding Regulations - South Africa",
+    "source_type": "DALRRD",
+    "chunk_text": "Feeding swill (kitchen waste, restaurant scraps, abattoir waste) to pigs is restricted under the Animal Diseases Act. Untreated swill is a known transmission route for African Swine Fever, classical swine fever, and foot-and-mouth disease. Permitted ONLY if: (a) the producer is registered with the State Veterinarian for swill feeding, (b) all swill is heat-treated to a minimum core temperature of 90°C for 60 minutes before feeding, (c) records of source, treatment, and feeding are kept for inspection. For smallholders, the safer and legal path is commercial pig pellets or grain-based rations. Vegetable trimmings and crop residues from the farm itself (e.g., cabbage outer leaves) are NOT classified as swill and are permitted. Penalty for non-compliance: prosecution and herd destruction without compensation if linked to a disease outbreak.",
+    "relevance_score": 0.93
+  },
+  {
+    "source_title": "ARC Pig Health - Vaccination and Common Diseases",
+    "source_type": "ARC",
+    "chunk_text": "Recommended vaccinations for South African smallholder pig herds: Classical Swine Fever (CSF) — sows annually, weaners at 6 weeks; Erysipelas — sows twice yearly with pre-farrowing booster, boars annually; Parvovirus + Leptospirosis combination vaccine — gilts before first service. NO commercial ASF vaccine is available in South Africa — biosecurity is the only protection. Common smallholder diseases: Mange (Sarcoptes scabiei) — itching, skin thickening, treat with ivermectin 0.3 mg/kg subcutaneously, repeat after 14 days. Internal parasites (Ascaris suum roundworm) — poor growth, treat with fenbendazole or ivermectin. Withholding period for ivermectin in pigs: 28 days for meat. Pneumonia in young pigs — usually Mycoplasma plus secondary bacteria, treat with tylosin or oxytetracycline; improve ventilation and reduce stocking density. Always consult the State Veterinarian before bulk medicating.",
+    "relevance_score": 0.92
+  },
+  {
+    "source_title": "ARC Smallholder Pig Housing - Subtropical Climate Guide",
+    "source_type": "ARC",
+    "chunk_text": "For Eastern Cape coastal/subtropical conditions (Mthatha, OR Tambo): pigs do not sweat and overheat above 30°C, especially adults. Housing essentials: shaded run with at least 50% roof cover (corrugated iron painted white, or thatch), open sides for cross-ventilation, concrete floor sloped 1:50 to a drain (mud floors harbour parasites and pathogens), wallow or sprinkler for cooling in summer. Space requirements: sows 4-6 m² each, boars 6-8 m², weaners 1-1.5 m². Separate farrowing area with creep heater for piglets in winter (target 30-32°C in creep). Boundary fencing: solid fence at least 1.2m high (pigs root and escape easily). Water: clean drinker, 8-15 litres/day per adult pig in summer. Manure management: scrape daily, compost separately from cabbage land or pasteurise (heat to 55°C for 3 days) before applying to crops to prevent pathogen transfer.",
+    "relevance_score": 0.88
+  },
+  {
+    "source_title": "ARC Smallholder Pig Nutrition - Low-Cost Rations",
+    "source_type": "ARC",
+    "chunk_text": "Smallholder pig rations using locally available feed in Eastern Cape: Sows (gestation): 2.0-2.5 kg/day commercial sow pellets OR home-mix of 60% maize meal + 20% sunflower oilcake + 15% lucerne meal + 5% mineral premix. Sows (lactating): 4-6 kg/day plus free water. Boars: 2.5-3 kg/day maintenance ration. Weaners (10-25 kg): commercial weaner pellets ad libitum, target 1.0-1.5 kg/day. Finishers (25-90 kg): grower pellets or home-mix at 2-3 kg/day. Permitted farm-grown supplements: cabbage trimmings (limit to 20% of diet — too much causes thyroid issues from glucosinolates), pumpkin, sweet potato vines, lucerne. NOT permitted: kitchen swill containing meat (ASF risk and illegal without registration), mouldy maize (aflatoxin), green potatoes (solanine). Always provide a salt block and clean water.",
+    "relevance_score": 0.86
+  },
+  {
+    "source_title": "DRDAR Eastern Cape Cabbage Production Guide",
+    "source_type": "DRDAR",
+    "chunk_text": "Cabbage cultivars suited to Eastern Cape summer-rainfall conditions: Glory of Enkhuizen (open-pollinated, 70-85 days, market head 1.5-2 kg, traditional choice for smallholders, seed widely available and affordable), Drumhead (90-110 days, large heads 3-4 kg, good for storage, late-season planting), Conquistador F1 (hybrid, 75-85 days, uniform heads 2-2.5 kg, premium markets), Hercules F1 (heat-tolerant hybrid for summer planting). Planting windows in Mthatha/OR Tambo: main season February-April for winter harvest, August-October for spring/summer harvest. Avoid November-January planting (excessive heat plus rainfall causes head splitting and disease pressure). Spacing: 60cm between rows, 45cm in-row (about 37,000 plants/ha). Transplant seedlings at 4-6 true leaves. Fertiliser: base application 600 kg/ha 2:3:4(30) at transplanting, topdress with 200 kg/ha LAN at cupping stage (week 4-5). Water requirement: 25-40mm/week, critical during head formation.",
+    "relevance_score": 0.94
+  },
+  {
+    "source_title": "DRDAR Cabbage Pest Management - Diamondback Moth",
+    "source_type": "DRDAR",
+    "chunk_text": "Diamondback moth (Plutella xylostella) is the most damaging cabbage pest in South Africa and has developed resistance to many chemical pesticides. Symptoms: small green-grey caterpillars (8-12mm) on the underside of leaves, characteristic 'window-pane' feeding damage where they eat the leaf surface but leave the upper epidermis intact, holes in mature leaves. Integrated control: (1) Bacillus thuringiensis (Bt) sprays — selective, safe for bees and beneficial insects, apply weekly during pest pressure, withholding period 0 days. (2) Spinosad-based products (e.g., Tracer at 0.4 L/ha) — withholding 7 days. (3) Indoxacarb (e.g., Steward 150SC at 200 ml/ha) — withholding 7 days. ALWAYS rotate active ingredients to slow resistance. (4) Cultural: destroy crop residues immediately after harvest, avoid continuous cabbage cropping (rotate with maize or beans), plant trap crops (mustard) at field edges. (5) Avoid pyrethroids — DBM is resistant in most of SA. PPE for sprays: chemical-resistant gloves, goggles, long sleeves. Poison Information Centre: 0861 555 777.",
+    "relevance_score": 0.95
+  },
+  {
+    "source_title": "DRDAR Cabbage Disease Management - Black Rot and Bacterial Soft Rot",
+    "source_type": "DRDAR",
+    "chunk_text": "Black rot (Xanthomonas campestris pv. campestris): yellow V-shaped lesions starting at leaf margins, blackened veins, plant stunting. Spread by infected seed, splashing rain, and contaminated tools. Favoured by warm wet conditions (24-30°C, common in Eastern Cape summer). Treatment: no effective curative chemical; remove and burn infected plants. Prevention: use certified disease-free seed, hot-water seed treatment (50°C for 25 minutes if uncertain), copper oxychloride sprays preventatively (2.5-3 kg/ha every 10-14 days during wet weather, withholding 7 days), 3-year rotation away from brassicas (cabbage, kale, broccoli, mustard, canola), tool sanitation between rows. Bacterial soft rot (Pectobacterium carotovorum): water-soaked lesions on heads that turn slimy and foul-smelling, often post-harvest. Prevention: harvest in dry conditions, handle gently to avoid bruising, cool heads quickly, store at 0-2°C and 95% humidity. No chemical control is effective.",
+    "relevance_score": 0.90
+  },
+  {
+    "source_title": "DRDAR Soil Management - Eastern Cape Acidic Soils",
+    "source_type": "DRDAR",
+    "chunk_text": "Eastern Cape former Transkei soils (including OR Tambo / Libode / Mthatha) are typically acidic with pH 4.5-5.5 due to high summer rainfall (700-900mm) leaching basic cations. Cabbage requires pH 6.0-6.8 for optimum growth — without liming, expect stunted plants, poor head formation, and clubroot susceptibility. Soil testing: collect 10-15 random subsamples per land at 0-15cm depth, mix into one composite sample (500g), submit to a soil lab. Lime application guide: pH 4.5-5.0 → apply 4-6 tons/ha agricultural lime (calcium carbonate, CaCO3); pH 5.0-5.5 → 2-3 tons/ha; pH 5.5-6.0 → 1-1.5 tons/ha. Use dolomitic lime if soil magnesium is low. Apply 2-3 months before planting, broadcast and incorporate to 15cm depth. Re-test every 2-3 years. Pig manure can lower pH further over time — compost it and balance with lime applications.",
+    "relevance_score": 0.93
+  },
+  {
+    "source_title": "Eastern Cape Smallholder Markets - Mthatha and Surrounds",
+    "source_type": "DRDAR",
+    "chunk_text": "Cabbage market channels available to OR Tambo / Libode / Mthatha smallholders: (1) Mthatha National Fresh Produce Market (NFPM) — wholesale market accepting smallholder consignments, requires 25kg crates, payment 7-14 days after sale, agent commission around 7.5%. (2) Local hawkers and spaza shops — direct sale at the farm gate or Mthatha CBD, cash on delivery, lower price but immediate payment. (3) National School Nutrition Programme (NSNP) — supplies primary schools in OR Tambo, contracts run termly, requires registration with the EC Department of Education, reliable pricing. (4) Boxer / Spar / Pick n Pay regional procurement — requires GLOBALG.A.P. or LocalG.A.P. certification, consistent supply minimum 500kg/week, contact regional buying offices. Pig market channels: (1) Live sale at local auctions (Mthatha, Libode), prices vary R25-40/kg live weight; (2) Direct sale to township butcheries — must be slaughtered at a registered abattoir; (3) Weaner sales to commercial finishers, R600-1200 per weaner depending on weight and breed.",
+    "relevance_score": 0.85
+  },
+  {
+    "source_title": "Eastern Cape State Vet and Animal Disease Reporting",
+    "source_type": "DALRRD",
+    "chunk_text": "Reporting suspected notifiable animal disease in Eastern Cape (foot-and-mouth, ASF, classical swine fever, anthrax, rabies, brucellosis, lumpy skin disease, avian influenza): contact the local State Veterinarian's office immediately. The OR Tambo District state vet office is in Mthatha. Provincial DALRRD offices coordinate veterinary services through DRDAR (Department of Rural Development and Agrarian Reform). For emergencies after hours, the national DALRRD hotline can route to a regional duty vet. Always provide: farm GPS coordinates or address, species and number of animals affected, clinical signs, date of first symptoms, recent animal movements onto/off the property. Do NOT move animals, carcasses, or products from the suspect property until the State Vet has assessed. Carcasses must NOT be opened if anthrax is suspected — bury or burn in situ on direction from the State Vet. Penalty for non-reporting: prosecution under the Animal Diseases Act 35 of 1984 and ineligibility for any future compensation programme.",
+    "relevance_score": 0.91
   }
 ]

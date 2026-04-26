@@ -16,6 +16,7 @@ def assemble_system_prompt(
     vision_results: VisionResult | None = None,
     price_data: str | None = None,
     weather_data: str | None = None,
+    financial_context: str | None = None,
 ) -> str:
     """
     Assemble the complete system prompt from all six modular segments.
@@ -25,7 +26,7 @@ def assemble_system_prompt(
     """
     segments: list[str] = []
 
-    # 1. Identity (who InDaba is)
+    # 1. Identity (who Limi is)
     segments.append(IDENTITY_PROMPT)
 
     # 2. Safety rules (non-negotiable, highest priority after identity)
@@ -55,6 +56,12 @@ def assemble_system_prompt(
             "If the answer is NOT in these sources, say so honestly."
         )
         segments.append("\n".join(knowledge_lines))
+
+    # 3b. Financial context (if available for financial intents)
+    if financial_context:
+        segments.append(f"""FINANCIAL CONTEXT (available products for this farmer):
+{financial_context}
+ELIGIBILITY NOTE: Present these as options, not recommendations. Apply Safety Rule 8 (Financial Disclosure) strictly.""")
 
     # 4. Farmer profile (personalisation)
     segments.append(_format_farmer_profile(farmer))

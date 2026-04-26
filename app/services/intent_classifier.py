@@ -5,6 +5,42 @@ from app.models.enums import ContentType, Intent, Language, RiskLevel
 # Each tuple: (list of keywords, intent, risk_level).
 # Checked in order — first match wins.
 _KEYWORD_RULES: list[tuple[list[str], Intent, RiskLevel]] = [
+    # Financial intents checked first (before MARKET_PRICE to avoid "market" collision)
+    (
+        [
+            "loan", "finance", "borrow", "credit", "imalimboleko",
+            "imali-mboleko", "isikweletu", "input finance", "seed finance",
+            "funding", "uxhaso", "inkxaso-mali",
+        ],
+        Intent.LOAN_INQUIRY,
+        RiskLevel.MEDIUM,
+    ),
+    (
+        [
+            "insurance", "insure", "crop insurance", "umshwalense",
+            "i-inshorensi", "cover my crop", "protect my crop",
+            "ukuvikela isivuno",
+        ],
+        Intent.INSURANCE_INQUIRY,
+        RiskLevel.MEDIUM,
+    ),
+    (
+        [
+            "savings", "save money", "ukulondoloza", "ukonga",
+            "stokvel", "isitokofela", "save for",
+        ],
+        Intent.SAVINGS_INQUIRY,
+        RiskLevel.LOW,
+    ),
+    (
+        [
+            "sell my crop", "find a buyer", "buyer", "offtaker",
+            "off-taker", "market access", "umthengi", "thengisa",
+            "sell my maize", "sell my harvest",
+        ],
+        Intent.MARKET_LINKAGE,
+        RiskLevel.LOW,
+    ),
     (
         ["price", "cost", "rand", "safex", "intengo", "ixabiso", "r/"],
         Intent.MARKET_PRICE,
@@ -23,6 +59,8 @@ _KEYWORD_RULES: list[tuple[list[str], Intent, RiskLevel]] = [
         [
             "cow", "cattle", "goat", "sheep", "chicken", "pig",
             "inkomo", "imbuzi", "imvu", "inkukhu",
+            # isiXhosa livestock terms (singular + plural variants)
+            "ihagu", "iihagu", "iinkomo", "ibhokhwe", "iibhokhwe",
             "sick animal", "vet", "limping", "not eating",
             "foam", "bleeding", "fever", "diarrhoea", "swelling",
             "shaking", "convulsions", "down",

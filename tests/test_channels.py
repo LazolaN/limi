@@ -29,7 +29,7 @@ def test_web_constraints():
 def test_sms_constraints():
     result = get_channel_constraints(Channel.SMS)
     assert "160 characters" in result
-    assert "InDaba" in result
+    assert "Limi" in result
 
 
 def test_all_channels_return_non_empty():

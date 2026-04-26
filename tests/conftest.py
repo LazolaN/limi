@@ -75,6 +75,42 @@ def english_farmer() -> FarmerProfile:
     )
 
 
+def _make_farmer() -> FarmerProfile:
+    """Helper for non-fixture usage in tests."""
+    return FarmerProfile(
+        display_name="Sipho",
+        language=Language.ISIZULU,
+        province="KwaZulu-Natal",
+        district="uMgungundlovu",
+        farm_type=FarmType.SMALLHOLDER,
+        crops=["maize", "beans", "cabbage"],
+        livestock=["cattle", "goats"],
+        farm_size_ha=4.5,
+        tier=SubscriptionTier.FREE,
+        nearest_dard_office="Pietermaritzburg DARD",
+        nearest_dard_phone="033 355 9100",
+        state_vet_phone="033 845 9801",
+    )
+
+
+def _make_chunks() -> list[KnowledgeChunk]:
+    """Helper for non-fixture usage in tests."""
+    return [
+        KnowledgeChunk(
+            source_title="DARD Maize Production Guidelines",
+            source_type="DARD",
+            chunk_text="Maize planting in KZN should commence when soil temperature reaches 12°C.",
+            relevance_score=0.95,
+        ),
+        KnowledgeChunk(
+            source_title="ARC Northern Corn Leaf Blight Advisory",
+            source_type="ARC",
+            chunk_text="Northern Corn Leaf Blight is caused by Exserohilum turcicum. Apply triazole fungicide.",
+            relevance_score=0.90,
+        ),
+    ]
+
+
 @pytest.fixture
 def sample_knowledge_chunks() -> list[KnowledgeChunk]:
     return [

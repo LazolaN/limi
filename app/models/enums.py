@@ -48,6 +48,26 @@ class Intent(StrEnum):
     GENERAL_AGRI = "general_agri"
     SUBSCRIPTION_MGMT = "subscription_mgmt"
     HUMAN_ESCALATION = "human_escalation"
+    LOAN_INQUIRY = "loan_inquiry"
+    INSURANCE_INQUIRY = "insurance_inquiry"
+    SAVINGS_INQUIRY = "savings_inquiry"
+    MARKET_LINKAGE = "market_linkage"
+
+
+class FinancialProductType(StrEnum):
+    INPUT_FINANCING = "input_financing"
+    CROP_INSURANCE = "crop_insurance"
+    MARKET_LINKAGE = "market_linkage"
+    SAVINGS = "savings"
+
+
+class TransactionStatus(StrEnum):
+    INQUIRY = "inquiry"
+    APPLICATION = "application"
+    APPROVED = "approved"
+    DISBURSED = "disbursed"
+    REJECTED = "rejected"
+    COMPLETED = "completed"
 
 
 class ConfidenceLevel(StrEnum):

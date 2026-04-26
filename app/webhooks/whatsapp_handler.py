@@ -2,12 +2,12 @@ import uuid
 from datetime import datetime
 
 from app.models.enums import Channel, Language, ContentType
-from app.models.messages import InDabaMessage
+from app.models.messages import LimiMessage
 
 
-def parse_whatsapp_message(payload: dict) -> InDabaMessage | None:
+def parse_whatsapp_message(payload: dict) -> LimiMessage | None:
     """
-    Parse an incoming WhatsApp Cloud API webhook payload into an InDabaMessage.
+    Parse an incoming WhatsApp Cloud API webhook payload into a LimiMessage.
 
     Returns None if the payload doesn't contain a user message (e.g., status updates).
     """
@@ -46,7 +46,7 @@ def parse_whatsapp_message(payload: dict) -> InDabaMessage | None:
             content_type = ContentType.TEXT
             content = {"text": ""}
 
-        return InDabaMessage(
+        return LimiMessage(
             message_id=wa_message.get("id", str(uuid.uuid4())),
             farmer_id=sender,
             channel=Channel.WHATSAPP,

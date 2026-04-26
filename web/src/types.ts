@@ -7,7 +7,7 @@ export type ConfidenceLevel = 'HIGH' | 'MEDIUM' | 'LOW';
 export type RiskLevel = 'high' | 'medium' | 'low';
 export type Intent = string;
 
-export interface InDabaMessage {
+export interface LimiMessage {
   message_id: string;
   farmer_id: string;
   channel: Channel;

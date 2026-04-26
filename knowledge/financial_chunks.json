@@ -1,0 +1,38 @@
+[
+  {
+    "source_title": "National Credit Act (NCA) — Basics for Agricultural Lending",
+    "source_type": "NCA",
+    "chunk_text": "The National Credit Act 34 of 2005 (NCA) regulates all credit agreements in South Africa, including agricultural input financing. Key provisions for farmers: (1) Affordability assessment: Lenders must assess whether the farmer can afford repayments before granting credit. (2) Cooling-off period: Borrowers have 5 business days to withdraw from a credit agreement without penalty (Section 121). (3) Total cost of credit: Lenders must disclose the total amount repayable, including interest and fees, before the agreement is signed. (4) Maximum interest rates: The NCA caps interest rates. For unsecured credit (common in smallholder lending), the current maximum is the repo rate plus 21% per annum. (5) Debt review: Farmers who are over-indebted can apply for debt review through a registered debt counsellor. Agricultural credit providers registered with the NCR include commercial banks, agricultural cooperatives, and microfinance institutions.",
+    "relevance_score": 0.90
+  },
+  {
+    "source_title": "Index-Based Crop Insurance — How It Works in South Africa",
+    "source_type": "Insurance",
+    "chunk_text": "Index-based crop insurance (also called weather-index insurance) pays out when a measurable weather parameter (rainfall, temperature, soil moisture) crosses a predefined threshold, regardless of actual crop damage. This differs from traditional indemnity insurance which requires physical loss assessment. In South Africa, index insurance is offered by providers including Pula Advisors (partnered with Old Mutual Insure), Santam Agriculture, and OUTsurance Agri. Typical products: (1) Drought index: Pays out when cumulative rainfall in a defined period falls below a threshold (e.g., <200mm during Oct-Jan for maize in KZN). (2) Excess moisture index: Pays out when rainfall exceeds a threshold, causing waterlogging. Premium ranges: R200-R800 per hectare per season depending on crop, region, and coverage level. Government subsidies: The Department of Agriculture has piloted premium subsidy programmes for emerging farmers (up to 50% of premium). Limitations: Basis risk — the weather station data may not perfectly reflect conditions on the specific farm. Farmers should understand that a payout is not guaranteed even if their specific crop fails, if the index threshold is not triggered.",
+    "relevance_score": 0.92
+  },
+  {
+    "source_title": "Input Financing for Smallholder Farmers — South Africa",
+    "source_type": "Finance",
+    "chunk_text": "Input financing provides farmers with seeds, fertiliser, and crop protection products on credit, with repayment typically due after harvest (pay-as-you-harvest model). In South Africa, input financing is offered through: (1) Agricultural cooperatives (e.g., VKB, Senwes, NWK) — primarily serving commercial farmers. (2) Development finance institutions: Land Bank, IDC (Industrial Development Corporation), MAFISA (Micro Agricultural Financial Institutions of South Africa) — targeting emerging and smallholder farmers. (3) MAFISA: Government programme providing loans of R500 to R500,000 at repo rate +1% for production inputs. (4) Commercial banks with agri desks: ABSA AgriBusiness, Standard Bank Agriculture, FNB Agri. Typical input package costs: Smallholder maize (1-5 ha): R2,000-R8,000 per hectare including seed, fertiliser, and herbicide. Emerging farmer maize (10-50 ha): R15,000-R40,000 total. Repayment terms: 4-8 months (one growing season). Interest rates: 10-18% per annum depending on risk profile and provider. Collateral: Often not required for small amounts (<R10,000) under group lending models.",
+    "relevance_score": 0.91
+  },
+  {
+    "source_title": "Market Linkage and Commodity Trading for SA Farmers",
+    "source_type": "SAFEX",
+    "chunk_text": "Market linkage connects farmers with verified buyers at transparent, SAFEX-referenced prices. The South African Futures Exchange (SAFEX), operated by JSE, sets benchmark prices for white maize, yellow maize, wheat, soybeans, and sunflower seed. Farm-gate prices are typically 10-15% below SAFEX spot prices, accounting for transport, handling, and quality discounts. Key market channels for smallholders: (1) Fresh produce markets (FPMs): Johannesburg, Durban, Cape Town, Tshwane — for vegetables and fruit. Commission agents charge 5-7.5% on sales. (2) Grain silos and cooperatives: Accept delivery of grains at SAFEX-referenced prices less silo charges (R150-R300/ton). (3) Informal markets: Farmgate sales, roadside markets — prices vary widely, typically 20-40% below SAFEX. (4) Contract farming: Pre-agreed prices with offtakers (e.g., Tiger Brands, Pioneer Foods). Provides price certainty but may lock in below-market prices. For emerging farmers: Group marketing (aggregating smallholder harvests) improves bargaining power and reduces per-ton transport costs.",
+    "relevance_score": 0.93
+  },
+  {
+    "source_title": "SARS Tax Implications for Smallholder Farm Income",
+    "source_type": "SARS",
+    "chunk_text": "South African farmers must declare farm income to SARS. Key provisions: (1) Tax threshold: Individuals earning below R95,750 per annum (2025/26 tax year) pay no income tax. Most smallholder farmers fall below this threshold. (2) Farming income includes: crop sales, livestock sales, insurance payouts, and government grants above R100,000. (3) Deductible expenses: Seeds, fertiliser, pesticides, hired labour, transport to market, irrigation costs, and insurance premiums are all deductible against farming income. (4) Ring-fencing of farming losses: SARS may ring-fence farming losses if farming is not the taxpayer's primary income source (section 20A). (5) VAT: Farmers with turnover exceeding R1 million must register for VAT. Below this, registration is optional but may be beneficial for input VAT claims. (6) Diesel rebate: Farmers can claim a diesel rebate for fuel used in farming operations. The 2025/26 rebate is R4.42 per litre.",
+    "relevance_score": 0.85
+  },
+  {
+    "source_title": "Stokvel and Savings Groups for Agricultural Communities",
+    "source_type": "Finance",
+    "chunk_text": "Stokvels are informal savings groups widely used across South Africa, with an estimated 11 million members and R50 billion in annual circulation. Agricultural stokvels operate on a seasonal cycle: members contribute monthly (typically R100-R500) and receive a lump sum before planting season to purchase inputs. Formalisation options: (1) Many banks now offer stokvel accounts (FNB, ABSA, Nedbank, Standard Bank) with higher interest rates than standard savings. (2) TymeBank offers zero-fee savings accounts accessible via *120*4567# (USSD) — suitable for rural areas without bank branches. (3) Discovery Bank offers dynamic interest rates up to 11% on savings. Agricultural savings tips for farmers: (1) Save at least 20% of harvest income for next season's inputs. (2) Keep emergency fund of 3 months' expenses for livestock feed during drought. (3) Consider formal agricultural savings products from Land Bank or agricultural cooperatives for larger amounts. FSCA regulation: Formal savings products are regulated by the Financial Sector Conduct Authority. Stokvel contributions themselves are not regulated but stokvel bank accounts are protected under the Deposit Insurance Scheme up to R100,000.",
+    "relevance_score": 0.88
+  }
+]

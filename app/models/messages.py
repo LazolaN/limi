@@ -13,7 +13,7 @@ from app.models.enums import (
 )
 
 
-class InDabaMessage(BaseModel):
+class LimiMessage(BaseModel):
     """Inbound message from a farmer via any channel."""
 
     message_id: str
@@ -78,3 +78,8 @@ class QueryResponse(BaseModel):
     language: Language
     risk_level: RiskLevel
     escalated: bool = False
+    llm_model_used: str | None = None
+    input_tokens: int = 0
+    output_tokens: int = 0
+    cache_hit: bool = False
+    financial_products_shown: list[str] | None = None

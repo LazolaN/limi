@@ -32,6 +32,7 @@ def test_all_safety_rules_present(kzn_smallholder, sample_knowledge_chunks):
     assert "NO FINANCIAL GUARANTEES" in prompt
     assert "CULTURAL SENSITIVITY" in prompt
     assert "DATA BOUNDARIES" in prompt
+    assert "FINANCIAL DISCLOSURE" in prompt
 
 
 def test_terminology_injected_for_isizulu(kzn_smallholder, sample_knowledge_chunks):

@@ -1,4 +1,5 @@
-import { User, Globe, Radio, Sprout, Trash2 } from 'lucide-react';
+import { User, Globe, Radio, Sprout, Trash2, Landmark } from 'lucide-react';
+import { FinancialPanel } from './FinancialPanel';
 import { FARMERS, LANGUAGES, CHANNELS } from '../data';
 import type { Language, Channel, FarmerOption } from '../types';
 
@@ -31,8 +32,8 @@ export function Sidebar({
           <Sprout size={20} className="text-white" />
         </div>
         <div>
-          <h1 className="font-display text-lg font-bold text-earth-900">InDaba</h1>
-          <p className="text-xs text-earth-400">Agricultural Advisory</p>
+          <h1 className="font-display text-lg font-bold text-earth-900">Limi</h1>
+          <p className="text-xs text-earth-400">Your Farm Advisor</p>
         </div>
       </div>
 
@@ -104,8 +105,13 @@ export function Sidebar({
             ))}
           </div>
           <p className="mt-1.5 text-[10px] text-earth-300">
-            Changes how InDaba formats responses
+            Changes how Limi formats responses
           </p>
+        </Section>
+
+        {/* Financial Products */}
+        <Section icon={<Landmark size={14} />} title="Financial Products">
+          <FinancialPanel farmerId={selectedFarmer.id} />
         </Section>
       </div>
 

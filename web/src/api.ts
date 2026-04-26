@@ -1,10 +1,10 @@
-import type { InDabaMessage, QueryResponse } from './types';
+import type { LimiMessage, QueryResponse } from './types';
 
 /**
- * Send an advisory query to the InDaba API.
+ * Send an advisory query to the Limi API.
  * Proxied through Vite dev server → FastAPI on port 8000.
  */
-export async function sendQuery(message: InDabaMessage): Promise<QueryResponse> {
+export async function sendQuery(message: LimiMessage): Promise<QueryResponse> {
   const response = await fetch('/api/query', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

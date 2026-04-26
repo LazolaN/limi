@@ -47,7 +47,7 @@ def get_sms_constraints() -> str:
     return """CHANNEL: SMS (outbound push alerts only)
 - Maximum 160 characters.
 - Format: [ALERT TYPE] [content] [action]
-- No greeting or sign-off (save characters). End with "-InDaba"
+- No greeting or sign-off (save characters). End with "-Limi"
 - Alert types: ISIMO SEZULU (weather), INTENGO (price), ISIXWAYISO (warning)"""
 
 

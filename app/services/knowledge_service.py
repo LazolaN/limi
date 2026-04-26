@@ -5,13 +5,14 @@ from app.models.enums import Intent
 from app.models.messages import KnowledgeChunk
 
 # Load seed chunks once at module import time.
-_SEED_CHUNKS_PATH = Path(__file__).parent.parent.parent / "knowledge" / "seed_chunks.json"
+_KNOWLEDGE_DIR = Path(__file__).parent.parent.parent / "knowledge"
 _SEED_CHUNKS: list[KnowledgeChunk] = []
 
-if _SEED_CHUNKS_PATH.exists():
-    with open(_SEED_CHUNKS_PATH) as f:
+# Load all knowledge chunk files
+for _chunk_file in sorted(_KNOWLEDGE_DIR.glob("*.json")):
+    with open(_chunk_file) as f:
         raw_chunks = json.load(f)
-        _SEED_CHUNKS = [KnowledgeChunk(**chunk) for chunk in raw_chunks]
+        _SEED_CHUNKS.extend(KnowledgeChunk(**chunk) for chunk in raw_chunks)
 
 # Map intents to keywords for naive relevance filtering in MVP.
 _INTENT_KEYWORDS: dict[Intent, list[str]] = {
@@ -22,6 +23,10 @@ _INTENT_KEYWORDS: dict[Intent, list[str]] = {
     Intent.MARKET_PRICE: ["safex", "price", "commodity", "market", "futures"],
     Intent.SOIL_FERTILITY: ["soil", "pH", "lime", "fertiliser", "manure"],
     Intent.IRRIGATION_ADVICE: ["irrigation", "water", "drip"],
+    Intent.LOAN_INQUIRY: ["loan", "credit", "finance", "nca", "mafisa", "input financing", "borrow"],
+    Intent.INSURANCE_INQUIRY: ["insurance", "premium", "index", "payout", "crop insurance", "drought"],
+    Intent.SAVINGS_INQUIRY: ["savings", "stokvel", "save", "bank", "account", "deposit"],
+    Intent.MARKET_LINKAGE: ["buyer", "market", "sell", "offtaker", "contract", "farm-gate", "safex"],
 }
 
 

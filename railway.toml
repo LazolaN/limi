@@ -1,0 +1,15 @@
+# Railway deployment config
+# Web service auto-applies migrations on every deploy and serves on $PORT.
+# Pilot farmer seeding is a one-off (run from Railway shell after first deploy):
+#   python scripts/seed_pilot_farmer.py
+# Postgres + Redis are provisioned as separate Railway services.
+
+[build]
+builder = "DOCKERFILE"
+
+[deploy]
+startCommand = "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3

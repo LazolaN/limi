@@ -7,7 +7,7 @@ def get_few_shot_examples(intent: Intent, language: Language, channel: Channel) 
     # Disease ID + isiZulu + WhatsApp (with photo)
     if intent == Intent.CROP_DISEASE_ID and language == Language.ISIZULU and channel == Channel.WHATSAPP:
         return """User: [Photo] Kwenzakalani emibileni yami?
-InDaba: *Sawubona! Ngibheke isithombe sakho.*
+Limi: *Sawubona! Ngibheke isithombe sakho.*
 
 *Ukuhlonza:* Northern Corn Leaf Blight (Isifo samaqabunga ommbila)
 Sibangelwa yisikhunta _Exserohilum turcicum_.
@@ -28,7 +28,7 @@ Poison Info Centre: 0861 555 777
     # Livestock Emergency + English + USSD
     if intent == Intent.LIVESTOCK_HEALTH and language == Language.ENGLISH and channel == Channel.USSD:
         return """User: My cow is shaking and has foam at mouth
-InDaba: 1/2: [!] URGENT: These symptoms may indicate a serious condition. Do NOT move the animal. Isolate it immediately.
+Limi: 1/2: [!] URGENT: These symptoms may indicate a serious condition. Do NOT move the animal. Isolate it immediately.
 Reply 1 for next >
 
 2/2: Call state vet NOW. If multiple cattle affected, may be notifiable disease. Keep others away.
@@ -37,7 +37,7 @@ Reply 1 for next >
     # Market Price + English + WhatsApp (commercial farmer)
     if intent == Intent.MARKET_PRICE and language == Language.ENGLISH and channel == Channel.WHATSAPP:
         return """User: What's the maize price today?
-InDaba: *SAFEX Prices (22 March 2026):*
+Limi: *SAFEX Prices (22 March 2026):*
 
 *White Maize (Jul26):* R4,850/ton (-1.2%)
 *Yellow Maize (Jul26):* R4,720/ton (-0.8%)
@@ -51,7 +51,7 @@ _This is an estimate only. Past trends do not guarantee future prices._
     # Low Confidence + isiZulu + USSD
     if intent == Intent.CROP_DISEASE_ID and language == Language.ISIZULU and channel == Channel.USSD:
         return """User: Isitshalo sami siyabuna kodwa ngiyasithelela
-InDaba: 1/2: Isitshalo esibunayo singaba nezimbangela eziningi. Yisiphi isitshalo?
+Limi: 1/2: Isitshalo esibunayo singaba nezimbangela eziningi. Yisiphi isitshalo?
 1. Umbila
 2. Utamatisi
 3. Amazambane
@@ -64,7 +64,7 @@ Thumela isithombe nge-WhatsApp ku-0XX XXX XXXX.
     # Generic disease ID example for WhatsApp English
     if intent == Intent.CROP_DISEASE_ID and channel == Channel.WHATSAPP:
         return """User: My tomato plants have brown spots on the leaves
-InDaba: *Looking at your description...*
+Limi: *Looking at your description...*
 
 This could be *Early Blight* (_Alternaria solani_) or *Septoria Leaf Spot* — both are common in South African tomato crops.
 
@@ -82,7 +82,7 @@ For a more accurate diagnosis, please send me a photo of the affected leaves via
     # Livestock health for WhatsApp English
     if intent == Intent.LIVESTOCK_HEALTH and channel == Channel.WHATSAPP:
         return """User: My goat is limping on the front leg since yesterday
-InDaba: *Let me help with your goat.*
+Limi: *Let me help with your goat.*
 
 *Confidence: MEDIUM*
 
@@ -99,5 +99,52 @@ A few questions to assess this better:
 If symptoms worsen or more animals are affected, contact your veterinarian immediately.
 
 [Button: Wound visible] [Button: Not eating]"""
+
+    # Loan inquiry + isiZulu + WhatsApp
+    if intent == Intent.LOAN_INQUIRY and language == Language.ISIZULU and channel == Channel.WHATSAPP:
+        return """User: Ngifuna imalimboleko yembewu yombila
+Limi: *Sawubona! Ngingakusiza ngoxhaso lwezimali zokutshala.*
+
+Limi inezinhlelo zokuxhasa abalimi ngezimpahla zokutshala (imbewu, umanyolo, imithi) okukhokhelwa ngemuva kokuvuna.
+
+*Lokho okufanele ukwazi:*
+- Izindleko zembewu yombila: R2,000-R8,000 ngehektare
+- Ukukhokhela: izinyanga ezi-4 kuya kwezi-8 ngemva kokuvuna
+- Inzalo: iqala ku-10% ngonyaka (ihlolwa ngamunye)
+
+*Okubalulekile:*
+- Izinga lenzalo nezikhokho kuya ngohlolo lokuboleka ngaphansi koMthetho Wesikweletu Kazwelonke (NCA)
+- Unezinsuku eziyi-5 zokuhoxa ngemuva kokusayina
+
+_Lokhu kuwulwazi kuphela, akuyona iseluleko sezezimali._
+
+[Button: Hlola ukufaneleka] [Button: Khuluma nomeluleki]"""
+
+    # Insurance inquiry + English + Web
+    if intent == Intent.INSURANCE_INQUIRY and channel == Channel.WEB:
+        return """User: How does crop insurance work for maize?
+Limi: ## Index-Based Crop Insurance for Maize
+
+Index-based crop insurance pays out when weather conditions in your area cross a predefined threshold — you don't need to prove actual crop damage.
+
+### How it works
+1. **You select** a crop and coverage level
+2. **Premium** is calculated based on your region and crop (typically R200-R800/ha)
+3. **If drought occurs** (e.g., rainfall below 200mm during Oct-Jan in KZN), the policy triggers automatically
+4. **Payout** is deposited directly to your account — no claims process needed
+
+### What IS covered
+- Drought (insufficient rainfall)
+- Excess moisture/waterlogging
+
+### What is NOT covered
+- Theft, fire, poor management, hail (unless specifically included)
+- Actual crop loss if the weather index threshold is not triggered
+
+### Important
+- Premiums may be subsidised up to 50% for emerging farmers through government programmes
+- Payouts are based on weather station data, not your specific farm
+
+*This is information only, not financial advice. Consult a registered financial advisor for personalised recommendations.*"""
 
     return ""

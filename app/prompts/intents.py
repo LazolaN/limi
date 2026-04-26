@@ -20,6 +20,14 @@ def get_intent_instructions(
         return _planting_calendar_instructions(weather_data)
     elif intent == Intent.HUMAN_ESCALATION:
         return _human_escalation_instructions()
+    elif intent == Intent.LOAN_INQUIRY:
+        return _loan_inquiry_instructions()
+    elif intent == Intent.INSURANCE_INQUIRY:
+        return _insurance_inquiry_instructions()
+    elif intent == Intent.SAVINGS_INQUIRY:
+        return _savings_inquiry_instructions()
+    elif intent == Intent.MARKET_LINKAGE:
+        return _market_linkage_instructions()
     else:
         return _generic_instructions(intent)
 
@@ -107,6 +115,72 @@ INSTRUCTIONS:
 3. Give an SLA: "A specialist will review your query within 24 hours."
 4. Provide the nearest DARD office phone number as an immediate alternative.
 5. Ask if there's anything else you can help with in the meantime."""
+
+
+def _loan_inquiry_instructions() -> str:
+    return """INTENT: INPUT FINANCING / LOAN INQUIRY
+
+INSTRUCTIONS:
+1. Explain that Limi partners with input suppliers and financial institutions to offer input financing (seeds, fertiliser, pesticides).
+2. Present financing as an option, NOT a recommendation. Apply Safety Rule 8 (Financial Disclosure) strictly.
+3. If the farmer's profile is available, check eligibility based on farm size, crop type, and province.
+4. Explain the general process: application → credit assessment → approval → input delivery → repayment after harvest.
+5. Key disclosures:
+   - "Interest rates are indicative and subject to individual credit assessment under the NCA."
+   - "You have a 5 business day cooling-off period after signing any credit agreement."
+   - "Failure to repay may affect your credit record."
+6. For smallholders: emphasise small package options (R1,000-R5,000). Mention that group lending (stokvel-based) may be available.
+7. For USSD: Keep to eligibility check + nearest office contact. Do not attempt full application on USSD.
+8. End with: "This is information only, not financial advice. Would you like to check your eligibility or speak to a financial advisor?" """
+
+
+def _insurance_inquiry_instructions() -> str:
+    return """INTENT: CROP INSURANCE INQUIRY
+
+INSTRUCTIONS:
+1. Explain index-based crop insurance in simple terms: "Insurance that pays out when weather conditions (like drought or excess rain) in your area fall below a threshold — you don't need to prove crop damage."
+2. Present available insurance products for the farmer's crops and province.
+3. Apply Safety Rule 8 (Financial Disclosure) strictly:
+   - Clearly explain what IS covered (weather events, specific crop) and what IS NOT (theft, poor management, hail unless specified).
+   - State that payouts are based on weather station data, NOT actual crop loss.
+   - Premiums are indicative and depend on crop, region, and coverage level.
+4. For smallholders: mention that premiums may be subsidised through government programmes or bundled with input financing.
+5. Explain the claim process: automatic trigger based on weather data → assessment → payout to farmer's account.
+6. For USSD: Summary only — "Crop insurance protects your harvest. Premium from ~R[X]/ha. Reply 1 to learn more."
+7. End with: "This is information only, not financial advice." """
+
+
+def _savings_inquiry_instructions() -> str:
+    return """INTENT: SAVINGS PRODUCT INQUIRY
+
+INSTRUCTIONS:
+1. Explain harvest-cycle savings products: "Save a portion of your harvest income and access it when you need to buy inputs for the next season."
+2. Mention stokvel integration where applicable — many SA farmers already use informal savings groups.
+3. Present formal savings options if available (partner banks/MFIs).
+4. Apply Safety Rule 8:
+   - "Returns on savings products are not guaranteed."
+   - "Savings products are regulated by the FSCA (Financial Sector Conduct Authority)."
+5. For smallholders: emphasise low minimum balances and mobile money accessibility.
+6. For USSD: Keep to basic concept + how to open an account.
+7. End with: "This is information only, not financial advice." """
+
+
+def _market_linkage_instructions() -> str:
+    return """INTENT: MARKET LINKAGE / FIND A BUYER
+
+INSTRUCTIONS:
+1. Explain that Limi can connect farmers with verified buyers at SAFEX-referenced prices.
+2. Present available market linkage options for the farmer's crops and province.
+3. Explain the process: farmer lists crop → matched with buyer → negotiate terms → Limi facilitates → small commission on successful sale.
+4. Key information to collect from the farmer:
+   - What crop are you selling?
+   - Estimated quantity (tons)?
+   - When will it be ready for collection?
+   - Quality/grade if known?
+5. Show current SAFEX reference price for context: "Current SAFEX white maize: R[X]/ton. Farm-gate prices are typically 10-15% below SAFEX."
+6. Disclose commission: "Limi charges a small facilitation fee of [X]% on successful sales."
+7. For USSD: Collect crop type and quantity only, then offer to call back or connect via WhatsApp for details.
+8. Do NOT guarantee a buyer or a specific price. """
 
 
 def _generic_instructions(intent: Intent) -> str:

@@ -37,7 +37,7 @@ export function ChatInput({ onSend, disabled, placeholder }: ChatInputProps) {
         onChange={(event) => setText(event.target.value)}
         onKeyDown={handleKeyDown}
         disabled={disabled}
-        placeholder={placeholder ?? 'Ask InDaba a question...'}
+        placeholder={placeholder ?? 'Ask Limi a question...'}
         rows={1}
         className="flex-1 resize-none bg-transparent px-2 py-1.5 text-sm text-earth-900 placeholder-earth-300 outline-none"
         style={{ maxHeight: '120px' }}
