@@ -1,4 +1,5 @@
 import asyncio
+import os
 from logging.config import fileConfig
 
 from alembic import context
@@ -9,6 +10,13 @@ from app.db.base import Base
 from app.db.models import FarmerDB, QueryLogDB, ConversationDB  # noqa: F401
 
 config = context.config
+
+# Override alembic.ini's sqlalchemy.url with DATABASE_URL env var when set
+# (production / Railway). Falls back to alembic.ini for local dev.
+_db_url = os.environ.get("DATABASE_URL")
+if _db_url:
+    config.set_main_option("sqlalchemy.url", _db_url)
+
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
