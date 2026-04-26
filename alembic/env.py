@@ -12,10 +12,24 @@ from app.db.models import FarmerDB, QueryLogDB, ConversationDB  # noqa: F401
 config = context.config
 
 # Override alembic.ini's sqlalchemy.url with DATABASE_URL env var when set
-# (production / Railway). Falls back to alembic.ini for local dev.
+# (production / Railway). Normalises plain `postgresql://` to
+# `postgresql+asyncpg://` so users can paste the canonical URL from a cloud
+# dashboard. Falls back to alembic.ini for local dev.
+def _normalize_db_url(url: str) -> str:
+    if not url:
+        return url
+    if url.startswith("postgresql+asyncpg://"):
+        return url
+    if url.startswith("postgresql://"):
+        return "postgresql+asyncpg://" + url[len("postgresql://"):]
+    if url.startswith("postgres://"):
+        return "postgresql+asyncpg://" + url[len("postgres://"):]
+    return url
+
+
 _db_url = os.environ.get("DATABASE_URL")
 if _db_url:
-    config.set_main_option("sqlalchemy.url", _db_url)
+    config.set_main_option("sqlalchemy.url", _normalize_db_url(_db_url))
 
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
